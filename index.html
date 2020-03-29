@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script src="./scripts/menu.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doppelanger</title>
@@ -8,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <audio hidden loop autoplay src="./sounds/wind.mp3"></audio>
     <div class="left-background">
         <img src='images/left-image.png' alt="">
     </div>
@@ -19,10 +20,10 @@
         <div class="line"></div>
 
         <div class="buttons">
-            <button id="newGame">Novo jogo</button>
-            <button id="continueGame">Continuar jogo</button>
-            <button id="quit">Sair</button>
-            <button id="credits">Créditos</button>
+            <button onclick="newGame()" id="newGame">Novo jogo</button>
+            <button onclick="continueGame()" id="continueGame">Continuar jogo</button>
+            <button onclick="quit()" id="quit">Sair</button>
+            <button onclick="credits()" id="credits">Créditos</button>
         </div>
 
     </div>
