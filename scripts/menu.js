@@ -1,4 +1,10 @@
 const sndClick = new Audio('./sounds/click.mp3');
+const bgSound = new Audio('./sounds/wind.mp3');
+
+setTimeout(() => {
+    bgSound.loop=true;
+    bgSound.play();
+}, 200);
 
 function playClickSound(){
     sndClick.play();
